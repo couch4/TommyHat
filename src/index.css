@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Antonio";
+  src: local("Antonio"), url(./assets/fonts/Antonio.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Whitney";
+  src: local("Whitney"),
+    url(./assets/fonts/Whitney-Medium-Bas.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "WhitneyBold";
+  src: local("WhitneyBold"),
+    url(./assets/fonts/Whitney-Bold-Bas.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Whitneylight";
+  src: local("WhitneyLight"),
+    url(./assets/fonts/Whitney-Light.otf) format("truetype");
+}

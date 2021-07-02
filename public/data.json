@@ -1,0 +1,649 @@
+{
+  "sections": [
+    {
+      "id": "landing",
+      "heading1": "Royal Navy",
+      "heading2": "Command Plan",
+      "subHead": "2021/22",
+      "heroes": [
+        {
+          "heroImage": "/command-plan-2021/assets/images/landing/heroImage1.jpg",
+          "heroMobile": "/command-plan-2021/assets/images/landing/heroImage1_mobile.jpg",
+          "depthMap": "/command-plan-2021/assets/images/landing/depthMap1.jpg"
+        },
+        {
+          "heroImage": "/command-plan-2021/assets/images/landing/heroImage2.jpg",
+          "heroMobile": "/command-plan-2021/assets/images/landing/heroImage2_mobile.jpg",
+          "depthMap": "/command-plan-2021/assets/images/landing/depthMap2.jpg"
+        },
+        {
+          "heroImage": "/command-plan-2021/assets/images/landing/heroImage3.jpg",
+          "heroMobile": "/command-plan-2021/assets/images/landing/heroImage3_mobile.jpg",
+          "depthMap": "/command-plan-2021/assets/images/landing/depthMap3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "introduction",
+      "heading": "Going further",
+      "subHead": "Delivering for the nation",
+      "copy": "This plan lays out how we intend to build on our successes, to deliver the Government’s vision of a more secure, prosperous and resilient United Kingdom over the coming decade. It contains everything from our vision for the future to the specific outcomes we expect to achieve.",
+      "diamond1": [
+        "/command-plan-2021/assets/images/introduction/diamond1.png"
+      ],
+      "diamond2": [
+        {
+          "desktop": "/command-plan-2021/assets/images/introduction/diamond2.png",
+          "mobile": "/command-plan-2021/assets/images/introduction/diamond2_mobile.png"
+        }
+      ],
+      "quote": {
+        "mobile": [
+          "We shall use our extra defence",
+          "spending to restore Britain's",
+          "position as the <span class='quote-italic'>foremost naval</span>",
+          "<span class='quote-italic'>power in Europe</span>, taking forward",
+          "our plans for eight Type 26 and",
+          "five Type 31 frigates, and support ",
+          "ships to supply our carriers."
+        ],
+        "tablet": [
+          "We shall use our extra defence spending to restore",
+          "Britain's position as the <span class='quote-italic'>foremost naval power in</span>",
+          "<span class='quote-italic'>Europe</span>, taking forward our plans for eight Type 26",
+          " and five Type 31 frigates, and support ships to",
+          "supply our carriers."
+        ],
+        "desktop": [
+          "We shall use our extra defence spending to",
+          "restore Britain's position as the <span class='quote-italic'>foremost naval</span>",
+          "<span class='quote-italic'>power in Europe</span>, taking forward our plans for",
+          "eight Type 26 and five Type 31 frigates, and",
+          "support ships to supply our carriers."
+        ]
+      },
+      "quoteTagline": "- Prime Minister Boris Johnson"
+    },
+    {
+      "id": "vision",
+      "heading": "Our key priorities",
+      "subHead": "All that we do, day in and day out, we do for the nation",
+      "copy": "\"My intent, our mission: A world class, global Navy, with inspired and inspiring people, working as one team to be highly efficient, lethal and innovative, to play our part for the people of the United Kingdom, protecting them, preventing conflict and ready to fight our enemies whenever and wherever needed.\" First Sea Lord",
+      "cta_text": "Find out more",
+      "cta_url": "/command-plan-2021/our-vision",
+      "visions": [
+        {
+          "title": "Operational advantage in the North Atlantic",
+          "copy": "Above all else, we must protect our homeland. That means doing everything from engaging with allies, to upgrading our kit, to ensuring we deter our adversaries.",
+          "images": [
+            "/command-plan-2021/assets/images/vision/northern_atlantic1.png",
+            "/command-plan-2021/assets/images/vision/northern_atlantic2.jpg",
+            "/command-plan-2021/assets/images/vision/northern_atlantic3.jpg"
+          ]
+        },
+        {
+          "title": "UK Carrier Strike",
+          "copy": "We are redefining what we deliver for defence, returning to a carrier strike capability that is at high readiness, using cutting-edge technology. ",
+          "images": [
+            "/command-plan-2021/assets/images/vision/carrier_strike1.jpg",
+            "/command-plan-2021/assets/images/vision/carrier_strike2.jpg",
+            "/command-plan-2021/assets/images/vision/carrier_strike3.jpg",
+            "/command-plan-2021/assets/images/vision/carrier_strike4.jpg"
+          ]
+        },
+        {
+          "title": "UK Commando Forces",
+          "copy": "From the sea we will seize the initiative, taking the Royal Marines back to its commando roots and working towards a littoral strike commando force. ",
+          "images": [
+            "/command-plan-2021/assets/images/vision/commando_forces1.jpg",
+            "/command-plan-2021/assets/images/vision/commando_forces2.jpg",
+            "/command-plan-2021/assets/images/vision/commando_forces3.jpg",
+            "/command-plan-2021/assets/images/vision/commando_forces4.jpg"
+          ]
+        },
+        {
+          "title": "Persistent Engagement",
+          "copy": "We will add to our existing presence in the Middle East, Falkland Islands and Caribbean, establishing ourselves in the Mediterranean and Indo-Pacific. ",
+          "images": [
+            "/command-plan-2021/assets/images/vision/persistent_engagement1.png",
+            "/command-plan-2021/assets/images/vision/persistent_engagement2.jpg",
+            "/command-plan-2021/assets/images/vision/persistent_engagement3.jpg",
+            "/command-plan-2021/assets/images/vision/persistent_engagement4.jpg"
+          ]
+        },
+        {
+          "title": "National Shipbuilding Strategy",
+          "copy": "We will maintain a steady pipeline of shipbuilding that provides British industry with confidence and certainty while promoting prosperity across the union.",
+          "images": [
+            "/command-plan-2021/assets/images/vision/ship_building1.png",
+            "/command-plan-2021/assets/images/vision/ship_building2.jpg",
+            "/command-plan-2021/assets/images/vision/ship_building3.jpg",
+            "/command-plan-2021/assets/images/vision/ship_building4.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "successes",
+      "heading": "Looking back",
+      "subHead": "Reflecting on our successes in a remarkable year",
+      "cta_text": "Find out more",
+      "cta_url": "/command-plan-2021/our-successes",
+      "achievements": [
+        {
+          "title": "68 ships at sea, across 6 continents",
+          "url": "/command-plan-2021/our-successes"
+        },
+        {
+          "title": "Over 4bn tonnes of sea trade assured in the Gulf",
+          "url": "/command-plan-2021/our-successes"
+        },
+        {
+          "title": "Over £450M Class A-C Narcotics seized",
+          "url": "/command-plan-2021/our-successes"
+        },
+        {
+          "title": "Times Top 50 employer for women",
+          "url": "/command-plan-2021/our-successes"
+        },
+        {
+          "title": "Continuous At Sea Deterrent maintained",
+          "url": "/command-plan-2021/our-successes"
+        },
+        {
+          "title": "4 ships leading Baltic Protector under NATO",
+          "url": "/command-plan-2021/our-successes"
+        },
+        {
+          "title": "71% of national shipbuilding revenue generated by the RN",
+          "url": "/command-plan-2021/our-successes"
+        },
+        {
+          "title": "4500 Apprenticeships",
+          "url": "/command-plan-2021/our-successes"
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "heading": "A better future",
+      "subHead": "Confronting challenges with our guiding principles",
+      "copy": "Our strategy will help us to build a maritime power for national competitive advantage, delivering our defence priority outcomes, from protecting the UK and its overseas territories to contributing to NATO. Our key areas of change include:",
+      "cta_text": "Find out more",
+      "cta_url": "/command-plan-2021/our-strategy",
+      "diamond": [
+        {
+          "desktop": "/command-plan-2021/assets/images/strategy/diamond1.png",
+          "mobile": "/command-plan-2021/assets/images/strategy/diamond1_mobile.png"
+        },
+        {
+          "desktop": "/command-plan-2021/assets/images/strategy/diamond2.png",
+          "mobile": "/command-plan-2021/assets/images/strategy/diamond2_mobile.png"
+        }
+      ],
+      "key_areas": [
+        {
+          "title": "Tech & Innovation",
+          "url": "/command-plan-2021/our-strategy"
+        },
+        {
+          "title": "Support",
+          "url": "/command-plan-2021/our-strategy"
+        },
+        {
+          "title": "Infrastructure",
+          "url": "/command-plan-2021/our-strategy"
+        },
+        {
+          "title": "Our operating model",
+          "url": "/command-plan-2021/our-strategy"
+        },
+        {
+          "title": "People & training",
+          "url": "/command-plan-2021/our-strategy"
+        }
+      ],
+      "hero2": [
+        {
+          "desktop": "/command-plan-2021/assets/images/hero2/hero2_1.jpg",
+          "mobile": "/command-plan-2021/assets/images/hero2/hero2_1_mobile.jpg"
+        },
+        {
+          "desktop": "/command-plan-2021/assets/images/hero2/hero2_2.jpg",
+          "mobile": "/command-plan-2021/assets/images/hero2/hero2_2_mobile.jpg"
+        },
+        {
+          "desktop": "/command-plan-2021/assets/images/hero2/hero2_3.jpg",
+          "mobile": "/command-plan-2021/assets/images/hero2/hero2_3_mobile.jpg"
+        },
+        {
+          "desktop": "/command-plan-2021/assets/images/hero2/hero2_4.jpg",
+          "mobile": "/command-plan-2021/assets/images/hero2/hero2_4_mobile.jpg"
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "heading": "Year of delivery",
+      "subHead": "2021 and beyond",
+      "cta_text": "Find out more",
+      "cta_url": "/command-plan-2021/delivery",
+      "dates": [
+        {
+          "title": "Q1 2021",
+          "points": [
+            "100% increase in Phase 1 Female accommodation at HMS RALEIGH",
+            "Publication of Navy Command Climate Change and Sustainability Strategy",
+            "UK Carrier Strike Group generated and deployed on Op FORTIS"
+          ]
+        },
+        {
+          "title": "Q2 2021",
+          "points": [
+            "National Skills academy for shipbuilding pilot established",
+            "Four RFA Ships East of Suez for first time since 2003",
+            "OP FORTIS: integrated action and strengthening key partnerships through the \"Global Britain\" initiative"
+          ]
+        },
+        {
+          "title": "Q3 2021",
+          "points": [
+            "First Royal Navy interactive careers experience opens",
+            "SMART Weapons mount at Sea trials, increasing accuracy and lethality",
+            "NATO training exercise and the certification of the High Readiness Force HQ"
+          ]
+        },
+        {
+          "title": "Q4 2021",
+          "points": [
+            "New Royal Marine Young Officer Training Programme commences",
+            "HMS Anson handover to the RN",
+            "HMS Prince of Wales on COLD RESPONSE 22"
+          ]
+        },
+        {
+          "title": "2022/23",
+          "points": [
+            "LRG(S) first deployment East of Suez from 2023",
+            "Introduction of a RN Warfighting Centre Operational HQ co-locating battlestaffs to deliver an agile Maritime C2 capability",
+            "Implementation of a Crypto Modernised Link 16 capability to QEC and T45 platform classes to enable interoperability to be maintained with NATO and Coalition Partners"
+          ]
+        },
+        {
+          "title": "2023/24",
+          "points": [
+            "RN personnel gaps recovered to full strength",
+            "Delivery of the Surface to Surface Guided Weapons (SSGW)",
+            "FOC (CS) Ability to operate up to 24 F-35B, 2 F35B Sqns, QEC capable of day/night Aviation operations"
+          ]
+        },
+        {
+          "title": "2024/25",
+          "points": [
+            "Increased mass, survivability and lethality to the F35 force, contributing to the de-risking of future combat aircraft (FWUAS)",
+            "Multi Role Ocean Surveillance Ship delivering military data gathering and hosting autonomous systems",
+            "LSD(A) upgraded to deliver Littoral Strike Operations"
+          ]
+        },
+        {
+          "title": "Looking forward to 2030",
+          "points": [
+            "Delivery of data-led support to all surface ships",
+            "Increased female representation in the RN to 15% by December 2025",
+            "Type 32 brought into service"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "heading": "Global Navy",
+      "subHead": "Global Britain",
+      "copy": "It’s our job to protect the UK and its interests, all over the world. That means we need to provide a world-class global force that is as efficient and lethal as it is innovative, ready to prevent conflict and fight our enemies.",
+      "cta_text": "Find out more",
+      "cta_url": "/command-plan-2021/global-navy",
+      "map": {
+        "mapKeysA": [
+          {
+            "id": "persistent",
+            "title": "Persistent</br>Engagement",
+            "keys": [
+              "T23",
+              "MCMV",
+              "Wave Class",
+              "LSD (A)",
+              "PCRF",
+              "IPS",
+              "OPV B2",
+              "SVHO",
+              "Wildcat",
+              "RM",
+              "P2000"
+            ]
+          },
+          {
+            "id": "littoral",
+            "title": "UK Commando</br>Forces",
+            "keys": ["LPD", "LSD (A)", "LCU/LCVP", "Merlin", "Wildcat", "RM"]
+          },
+          {
+            "id": "oana",
+            "title": "Operational</br>advantage in the</br>North Atlantic",
+            "keys": [
+              "SSBN",
+              "SSN",
+              "MCMV",
+              "OPV B1",
+              "OPV B2",
+              "OSV",
+              "T23",
+              "T45",
+              "Merlin",
+              "Wildcat",
+              "RM",
+              "P8",
+              "ISV"
+            ]
+          },
+          {
+            "id": "carrier",
+            "title": "UK Carrier</br>Strike",
+            "keys": [
+              "QEC",
+              "AFSH",
+              "T45",
+              "T23",
+              "SSN",
+              "Tide Class",
+              "Merlin",
+              "Wildcat",
+              "F-35B",
+              "RM"
+            ]
+          }
+        ],
+        "mapKeysB": [
+          {
+            "id": "atlantic",
+            "title": "North Atlantic",
+            "keys": [
+              "Overseas Territories",
+              "Counter Narcotics",
+              "Humanitarian Operations",
+              "Routine Above & Underwater Patrols",
+              "Subthreshold Operations",
+              "Littoral Response Group (North)"
+            ]
+          },
+          {
+            "id": "north",
+            "title": "High North",
+            "keys": [
+              "Deterrence",
+              "Route Survey",
+              "Military Data Gathering",
+              "Subthreshold Operations",
+              "Littoral Response Group (North)"
+            ]
+          },
+          {
+            "id": "baltic",
+            "title": "Baltic &</br>Eastern Europe",
+            "keys": [
+              "NATO Security Assistance Activities",
+              "Baltic Operations",
+              "Subthreshold Operations"
+            ]
+          },
+          {
+            "id": "med",
+            "title": "Mediterranean</br>& Black Sea",
+            "keys": [
+              "NATO Security Assistance Activity",
+              "Maritime Security Operations",
+              "Subthreshold Operations",
+              "Persistently Present B2 OPV",
+              "CSG21"
+            ]
+          },
+          {
+            "id": "africa",
+            "title": "West Africa",
+            "keys": [
+              "Humanitarian Operations",
+              "Maritime Security Operations",
+              "Capacity Building"
+            ]
+          },
+          {
+            "id": "middleEast",
+            "title": "Middle East",
+            "keys": [
+              "Key Partners & Allies",
+              "Freedom of Access & Navigation",
+              "Capacity Building",
+              "Maritime Security Operations"
+            ]
+          },
+          {
+            "id": "indo",
+            "title": "Indo Pacific",
+            "keys": [
+              "Key Partners & Allies",
+              "Persistently Present B2 OPVs",
+              "Freedom of Access & Navigation",
+              "Capacity Building",
+              "CSG21"
+            ]
+          },
+          {
+            "id": "antarctica",
+            "title": "South Atlantic</br>& Antarctica",
+            "keys": [
+              "Overseas Territories",
+              "Persistently Present B2 OPV",
+              "Polar Capability",
+              "Freedom of Access & Navigation"
+            ]
+          }
+        ],
+        "icons": [
+          {
+            "id": "AFSH",
+            "img": "/command-plan-2021/assets/images/global/AFSH.png"
+          },
+          {
+            "id": "F-35B",
+            "img": "/command-plan-2021/assets/images/global/F-35B.png"
+          },
+          {
+            "id": "IPS",
+            "img": "/command-plan-2021/assets/images/global/IPS.png"
+          },
+          {
+            "id": "ISV",
+            "img": "/command-plan-2021/assets/images/global/ISV.png"
+          },
+          {
+            "id": "LCU/LCVP",
+            "img": "/command-plan-2021/assets/images/global/LCU LCVP.png"
+          },
+          {
+            "id": "LPD",
+            "img": "/command-plan-2021/assets/images/global/LPD.png"
+          },
+          {
+            "id": "LSD (A)",
+            "img": "/command-plan-2021/assets/images/global/LSD (A).png"
+          },
+          {
+            "id": "MCMV",
+            "img": "/command-plan-2021/assets/images/global/MCMV.png"
+          },
+          {
+            "id": "Merlin",
+            "img": "/command-plan-2021/assets/images/global/Merlin.png"
+          },
+          {
+            "id": "OPV B1",
+            "img": "/command-plan-2021/assets/images/global/OPV B1.png"
+          },
+          {
+            "id": "OPV B2",
+            "img": "/command-plan-2021/assets/images/global/OPV B2.png"
+          },
+          {
+            "id": "OSV",
+            "img": "/command-plan-2021/assets/images/global/OSV.png"
+          },
+          {
+            "id": "P8",
+            "img": "/command-plan-2021/assets/images/global/P8.png"
+          },
+          {
+            "id": "P2000",
+            "img": "/command-plan-2021/assets/images/global/P2000.png"
+          },
+          {
+            "id": "PCRF",
+            "img": "/command-plan-2021/assets/images/global/PCRF.png"
+          },
+          {
+            "id": "QEC",
+            "img": "/command-plan-2021/assets/images/global/QEC.png"
+          },
+          {
+            "id": "RM",
+            "img": "/command-plan-2021/assets/images/global/RM.png"
+          },
+          {
+            "id": "SSBN",
+            "img": "/command-plan-2021/assets/images/global/SSBN.png"
+          },
+          {
+            "id": "SSN",
+            "img": "/command-plan-2021/assets/images/global/SSN.png"
+          },
+          {
+            "id": "SVHO",
+            "img": "/command-plan-2021/assets/images/global/SVHO.png"
+          },
+          {
+            "id": "T23",
+            "img": "/command-plan-2021/assets/images/global/T23.png"
+          },
+          {
+            "id": "T45",
+            "img": "/command-plan-2021/assets/images/global/T45.png"
+          },
+          {
+            "id": "Tide Class",
+            "img": "/command-plan-2021/assets/images/global/Tide Class.png"
+          },
+          {
+            "id": "Wave Class",
+            "img": "/command-plan-2021/assets/images/global/Wave Class.png"
+          },
+          {
+            "id": "Wildcat",
+            "img": "/command-plan-2021/assets/images/global/Wildcat.png"
+          }
+        ],
+        "hotspots": [
+          {
+            "id": "oana",
+            "type": "mapKeysA",
+            "position": { "x": 50, "y": 1 },
+            "mobilePosition": { "x": 43.5, "y": 3 }
+          },
+          {
+            "id": "north",
+            "type": "mapKeysB",
+            "position": { "x": 73, "y": 4.5 },
+            "mobilePosition": { "x": 70, "y": 4.5 }
+          },
+          {
+            "id": "atlantic",
+            "type": "mapKeysB",
+            "position": { "x": 26, "y": 29 },
+            "mobilePosition": { "x": 26, "y": 29 }
+          },
+          {
+            "id": "littoral",
+            "type": "mapKeysA",
+            "position": { "x": 55, "y": 17 },
+            "mobilePosition": { "x": 50, "y": 15 }
+          },
+          {
+            "id": "baltic",
+            "type": "mapKeysB",
+            "position": { "x": 65, "y": 30 },
+            "mobilePosition": { "x": 56, "y": 26 }
+          },
+          {
+            "id": "persistent",
+            "type": "mapKeysA",
+            "position": { "x": 30, "y": 46 },
+            "mobilePosition": { "x": 27, "y": 46 }
+          },
+          {
+            "id": "med",
+            "type": "mapKeysB",
+            "position": { "x": 45, "y": 54 },
+            "mobilePosition": { "x": 47, "y": 37 }
+          },
+          {
+            "id": "littoral",
+            "type": "mapKeysA",
+            "position": { "x": 59, "y": 47 },
+            "mobilePosition": { "x": 56, "y": 43 }
+          },
+          {
+            "id": "middleEast",
+            "type": "mapKeysB",
+            "position": { "x": 71, "y": 44 },
+            "mobilePosition": { "x": 63, "y": 38 }
+          },
+          {
+            "id": "antarctica",
+            "type": "mapKeysB",
+            "position": { "x": 41, "y": 87 },
+            "mobilePosition": { "x": 31, "y": 82 }
+          },
+          {
+            "id": "africa",
+            "type": "mapKeysB",
+            "position": { "x": 51, "y": 68 },
+            "mobilePosition": { "x": 46, "y": 62 }
+          },
+          {
+            "id": "carrier",
+            "type": "mapKeysA",
+            "position": { "x": 68, "y": 70 },
+            "mobilePosition": { "x": 65, "y": 63 }
+          },
+          {
+            "id": "persistent",
+            "type": "mapKeysA",
+            "position": { "x": 83, "y": 58 },
+            "mobilePosition": { "x": 78, "y": 55 }
+          },
+          {
+            "id": "indo",
+            "type": "mapKeysB",
+            "position": { "x": 82, "y": 78 },
+            "mobilePosition": { "x": 78, "y": 70 }
+          }
+        ]
+      }
+    }
+  ],
+  "menu": [
+    { "id": 0, "title": "Introduction" },
+    { "id": 1, "title": "Our Vision" },
+    { "id": 2, "title": "Our Successes" },
+    { "id": 3, "title": "Our Strategy" },
+    { "id": 4, "title": "Delivery" },
+    { "id": 5, "title": "Global Navy" }
+  ]
+}
