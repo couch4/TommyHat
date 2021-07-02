@@ -6,7 +6,7 @@ import { Environment, Html, OrbitControls } from '@react-three/drei'
 import { Clock, Vector3 } from 'three'
 import { useSpring } from "@react-spring/core"
 import Model from './Model'
-import Toon from '../../assets/mesh/toonBoom.gltf'
+import Toon from '../../assets/mesh/toonBoomDraco.glb'
 import useStore from '../../store'
 
 const object1Pos = [[-1.5,0,28.5],[-20,-25,0],[-200,100,100]]
