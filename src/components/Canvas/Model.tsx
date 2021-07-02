@@ -13,7 +13,7 @@ interface ModelProps {
   swapAnim: number
 }
 
-const shoePos = [[0,5,-10],[0,5,50],[-200,100,100]]
+const shoePos = [[0,5,-20],[0,5,50],[-200,100,100]]
 const shoeScale = [[0,0,0],[2,2,2],[0,0.5,0]]
 const boomScale = [[0,0,0],[0.5,0.5,0.5],[0,0.5,0]]
 
@@ -98,12 +98,13 @@ const Model:FC<ModelProps> = ({ animationProps, isLoaded, url, speedUp, swapAnim
     }
   })
 
-  console.log(model.scene)
+  // console.log(model.scene)
 
   const boomProps = useSpring({ 
     scale: boomScale[currentStep], 
+    delay: currentStep === 1 ? 150 : 0,
     config: { 
-      mass: 5, tension: currentStep === 1 ? 800 : 1000, friction: currentStep === 1 ? 30 : 100,
+      mass: 5, tension: currentStep === 1 ? 800 : 1000, friction: currentStep === 1 ? 40 : 100,
     } 
   })
 
