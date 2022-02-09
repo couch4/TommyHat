@@ -44,7 +44,7 @@ const Canvas: FC = () => {
   useEffect(() => { 
 
     if(controls && controls.current) {
-      camera.position.set(0,0,6)
+      camera.position.set(0,0,8)
       controls.current.update()
     }
   }, [controls])
