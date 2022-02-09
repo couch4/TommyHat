@@ -17,10 +17,11 @@ const Model:FC<ModelProps> = ({ animationProps, isLoaded, url, data }) => {
   const model = useGLTF(url)
   const main = useRef(null)
  
+    if(hat) {
+      hat.material.color.set(data.color)
+      hat.material.wireframe = data.wireframe
+    }
 
-  if(hat) {
-    hat.material.color.set(data.color)
-  }
 
   useEffect(() => {
     if(model.scene && isLoaded){

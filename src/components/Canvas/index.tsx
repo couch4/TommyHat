@@ -16,20 +16,22 @@ const Canvas: FC = () => {
   const { setIsLoading } = useStore()
   const { camera } = useThree()
   const controls = useRef(null)
-  const [data, setData] = useState({ color: '#FFFFFF' })
+  const [data, setData] = useState({ color: '#FFFFFF', wireframe: false })
 
   const handleLoaded = (model) => {
     setIsLoading(false)
 
   }
 
-  const handleUpdate = (value: any) => {
-    setData({color: value })
+  const handleUpdate = (value: any, name) => {
+    const newValue = { ...data, [name]: value }
+    setData(newValue)
   }
 
   useEffect(() => {
 
-    gui.addColor(data, 'color').onChange(handleUpdate)
+    gui.addColor(data, 'color').onChange((val) => handleUpdate(val, 'color'))
+    gui.add(data, 'wireframe').onChange((val) => handleUpdate(val, 'wireframe'))
 
     const guiContainer = document.getElementsByClassName('dg ac')[0]
     const closeButton = document.getElementsByClassName('close-button')[0]
