@@ -2,6 +2,7 @@
 import React, { Suspense } from "react"
 import { QueryClient, QueryClientProvider } from "react-query"
 import { ReactQueryDevtools } from "react-query/devtools"
+import { ACESFilmicToneMapping, sRGBEncoding, setAnisotropy } from 'three'
 import { Canvas } from "./components"
 import { Canvas as ThreeCanvas } from '@react-three/fiber'
 
@@ -11,7 +12,7 @@ const threeWrapper = {
     minHeight: '100vh',
   },
   shadows: true,
-  camera: { fov: 75, near: 0.1, far: 1000, position: [0, 0, 50], shadowMap: true }
+  camera: { fov: 75, near: 0.1, far: 1000, position: [0, 0, 50], shadowMap: true },
 }
 
 const queryClient = new QueryClient({
@@ -24,10 +25,17 @@ const queryClient = new QueryClient({
 
 function App() {
 
+  const onMount = ({ gl }: any) => {
+    gl.toneMappingExposure = 0.5
+    gl.physicallyCorrectLights = true
+    gl.toneMapping = ACESFilmicToneMapping
+    gl.outputEncoding = sRGBEncoding
+  }
+
   return (
     <QueryClientProvider client={queryClient}>
       <Suspense fallback={"LOADING"}>
-        <ThreeCanvas {...threeWrapper}>
+        <ThreeCanvas {...threeWrapper} onCreated={onMount} shadowMap>
             <Canvas />
           </ThreeCanvas>
       </Suspense>

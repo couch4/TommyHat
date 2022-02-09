@@ -1,8 +1,10 @@
 // @ts-nocheck
 import { FC, useEffect, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { Object3D, Mesh } from 'three'
+import { Object3D, Mesh, TextureLoader } from 'three'
 import { a } from "@react-spring/three"
+import Tex from '../../assets/textures/camo.jpg'
+import { clearTimeout } from 'timers'
 
 interface ModelProps {
   isLoaded?: (model:any) => void
@@ -12,15 +14,32 @@ interface ModelProps {
 }
 
 let hat = null
+let tex = null
+
+new TextureLoader().load(Tex, (texture) => {
+  tex = texture
+}) 
 
 const Model:FC<ModelProps> = ({ animationProps, isLoaded, url, data }) => {
   const model = useGLTF(url)
   const main = useRef(null)
+
  
     if(hat) {
       hat.material.color.set(data.color)
       hat.material.wireframe = data.wireframe
+      if(data.texture) {
+        hat.material.color.set(0xffffff)
+        tex.flipY = true
+        hat.material.map = tex
+
+      } else {
+        hat.material.map = null
+      }
+      console.log('hat.material', hat.material);
+      hat.material.needsUpdate = true
     }
+
 
 
   useEffect(() => {

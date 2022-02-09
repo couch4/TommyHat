@@ -16,7 +16,7 @@ const Canvas: FC = () => {
   const { setIsLoading } = useStore()
   const { camera } = useThree()
   const controls = useRef(null)
-  const [data, setData] = useState({ color: '#FFFFFF', wireframe: false })
+  const [data, setData] = useState({ color: '#FFFFFF', texture: false, wireframe: false })
 
   const handleLoaded = (model) => {
     setIsLoading(false)
@@ -32,6 +32,7 @@ const Canvas: FC = () => {
 
     gui.addColor(data, 'color').onChange((val) => handleUpdate(val, 'color'))
     gui.add(data, 'wireframe').onChange((val) => handleUpdate(val, 'wireframe'))
+    gui.add(data, 'texture').name('Camo (unmapped test)').onChange((val) => handleUpdate(val, 'texture'))
 
     const guiContainer = document.getElementsByClassName('dg ac')[0]
     const closeButton = document.getElementsByClassName('close-button')[0]
@@ -56,7 +57,7 @@ const Canvas: FC = () => {
           <Environment preset="sunset" />
         </Suspense>
         <OrbitControls ref={controls} />
-       <directionalLight position={[-100,100,50]} castShadow />
+       <directionalLight position={[100,800,-200]} castShadow intensity={0.8} />
       </>
   )
 }
