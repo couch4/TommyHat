@@ -1,106 +1,61 @@
 // @ts-nocheck
 
 import { FC, Suspense, useEffect, useState, useRef } from "react"
-import { useFrame, useThree } from '@react-three/fiber'
-import { Environment, Html, OrbitControls } from '@react-three/drei'
-import { Clock, Vector3 } from 'three'
-import { useSpring } from "@react-spring/core"
+import { useThree } from '@react-three/fiber'
+import { Environment, OrbitControls } from '@react-three/drei'
+import  * as Dat from 'dat.gui';
+import init from 'three-dat.gui'; // Import initialization method
 import Model from './Model'
-import Toon from '../../assets/mesh/toonBoomDraco.glb'
+import Hat from '../../assets/mesh/bucketHat.glb'
 import useStore from '../../store'
 
-const object1Pos = [[-1.5,0,28.5],[-20,-25,0],[-200,100,100]]
-const object1Rot = [[Math.PI/2,0,0],[0.2,0.5,0],[0,0.5,0]]
+init(Dat);
+const gui = new Dat.GUI()
 
 const Canvas: FC = () => {
-  const { currentSection, setIsLoading } = useStore()
+  const { setIsLoading } = useStore()
   const { camera } = useThree()
-  const clock = useRef(new Clock())
-  const [speedUp,setSpeedUp] = useState(false)
-  const [swapAnim,setSwapAnim] = useState(0)
-  const [shoe,setShoe] = useState(null)
-  const [balls,setBalls] = useState(null)
-
-  const obj1Props = useSpring({ 
-    position: object1Pos[currentSection], 
-    rotation: object1Rot[currentSection], 
-    config: { 
-      // mass: 5, tension: 1000, friction: 50, precision: 0.0001 
-    } 
-  })
-
+  const controls = useRef(null)
+  const [data, setData] = useState({ color: '#FFFFFF' })
 
   const handleLoaded = (model) => {
-    // setShoe(model)
     setIsLoading(false)
 
-    //   // console.log(`model`, model)
-
-    //   const ballsGroup = model.children[1]
-
-    //   const balls = ballsGroup.children.filter(val => val.name === 'balls')[0]
-    //   setBalls(balls)
-    //   updatePos(model)
   }
 
-  const updatePos = (obj) => {
-      if(obj){
-        // console.log(`currentSection`, currentSection, obj)
-      }
-      
+  const handleUpdate = (value: any) => {
+    setData({color: value })
   }
 
   useEffect(() => {
-    updatePos(shoe)
-  },[currentSection])
 
-  camera.position.set = new Vector3(0,100,200)
-  camera.fov = 30
+    gui.addColor(data, 'color').onChange(handleUpdate)
 
-  useFrame(() => {
-    const delta = clock.current.getDelta();
-    const elapsed = clock.current.getElapsedTime()
-    const wave = Math.cos(elapsed)*0.5
+    const guiContainer = document.getElementsByClassName('dg ac')[0]
+    const closeButton = document.getElementsByClassName('close-button')[0]
 
-    if(balls){
-      balls.rotation.z -= delta *(1 + currentSection)
+    guiContainer.style.margin = '2rem 1rem'
+    closeButton.style.display = 'none'
+
+  },[]);
+  
+  useEffect(() => { 
+
+    if(controls && controls.current) {
+      camera.position.set(0,0,6)
+      controls.current.update()
     }
-
-  })
-
-  const swapAnimations = () => {
-    setSwapAnim(swapAnim === 0 ? 1 : 0)
-  }
-
-  const handleMouseDown = () =>{
-    setSpeedUp(true)
-  }
-
-  const handleMouseUp = () =>{
-    setSpeedUp(false)
-  }
+  }, [controls])
 
   return (
     <>
         <Suspense fallback={null}>
-          <Model url={Toon} isLoaded={handleLoaded} speedUp={speedUp} swapAnim={swapAnim} />
+          <Model url={Hat} isLoaded={handleLoaded} data={data} />
           <Environment preset="sunset" />
         </Suspense>
-        <OrbitControls />
-        <Html style={{transform:'translate(400px, 300px)'}}>
-        <button
-          onClick={swapAnimations}
-          style={{lineHeight:1, background:'black', padding: '1rem', width:'10rem', marginBottom: '1rem'}}
-          >Swap animations</button>
-          <button
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          style={{lineHeight:1, background:'black', padding: '1rem', width:'10rem'}}
-          >hold to Speed up</button>
-        </Html>
-       
-        <directionalLight position={[50,100,50]} castShadow />
-    </>
+        <OrbitControls ref={controls} />
+       <directionalLight position={[-100,100,50]} castShadow />
+      </>
   )
 }
 

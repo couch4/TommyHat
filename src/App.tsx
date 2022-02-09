@@ -1,21 +1,9 @@
 // @ts-nocheck
-import React, { Suspense, useEffect, useState } from "react"
+import React, { Suspense } from "react"
 import { QueryClient, QueryClientProvider } from "react-query"
 import { ReactQueryDevtools } from "react-query/devtools"
-import { Canvas, Loader } from "./components"
+import { Canvas } from "./components"
 import { Canvas as ThreeCanvas } from '@react-three/fiber'
-import { useBreakpoint } from "./hooks"
-import { Flex } from "@chakra-ui/react"
-import useStore from "./store"
-
-const mainWrapper = {
-  textStyle: "copy",
-  minHeight: "100vh",
-  width: "100vw",
-  position: "absolute" as const,
-  zIndex: 1,
-  pointerEvents: 'none'
-}
 
 const threeWrapper = {
   style: {
@@ -35,17 +23,14 @@ const queryClient = new QueryClient({
 })
 
 function App() {
-  const { isLoading } = useStore()
-  const isDesktop = useBreakpoint() === "desktop" 
 
   return (
     <QueryClientProvider client={queryClient}>
       <Suspense fallback={"LOADING"}>
         <ThreeCanvas {...threeWrapper}>
-          <Canvas />
-        </ThreeCanvas>
+            <Canvas />
+          </ThreeCanvas>
       </Suspense>
-      {/* {isLoading && <Loader />} */}
       <ReactQueryDevtools initialIsOpen />
     </QueryClientProvider>
   )
